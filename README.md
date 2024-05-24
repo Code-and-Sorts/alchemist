@@ -1,8 +1,8 @@
-# Insomnium API Client
+# alchemist API Client
 
 *\<currently not being actively maintained>*
  
-Insomnium is a 100% local and privacy-focused open-source API client for testing GraphQL, REST, WebSockets, Server-sent events and gRPC in development/production.
+alchemist is a 100% local and privacy-focused open-source API client for testing GraphQL, REST, WebSockets, Server-sent events and gRPC in development/production.
 
 - ✅ works 100% offline, the way a local testing tool should behave <br>
 - ✅ no cloud services, no tracking/communication to external servers behind the scene <br>
@@ -31,7 +31,7 @@ Alternatively, you can build Insomnium from source on your local machine using `
 
 ## Backstory
 
-Insomnium is a fork of [Kong/insomnia at 2023.5.8](https://github.com/ArchGPT/insomnia), the last commit before compulsory account login was introduced. In a sense, Insomnium is a community response to [the latest product update that forces account creation w/o warning](https://news.ycombinator.com/item?id=37680522).
+alchemist is a fork of Insomnium, which is a fork of [Kong/insomnia at 2023.5.8](https://github.com/ArchGPT/insomnia), the last commit before compulsory account login was introduced. In a sense, Insomnium is a community response to [the latest product update that forces account creation w/o warning](https://news.ycombinator.com/item?id=37680522).
 
 ![HN](https://github.com/ArchGPT/insomnium/blob/main/hn.png?raw=true)
 
