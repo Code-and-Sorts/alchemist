@@ -68,7 +68,7 @@ export const deleteProjectAction: ActionFunction = async ({ params }) => {
   const project = await models.project.getById(projectId);
   guard(project, 'Project not found');
 
-  await models.stats.incrementDeletedRequestsForDescendents(project);
+  await models.stats.incrementDeletedRequestsForDescendants(project);
   await models.project.remove(project);
 
   return redirect(`/organization/${DEFAULT_ORGANIZATION_ID}/project/${DEFAULT_PROJECT_ID}`);
@@ -149,7 +149,7 @@ export const deleteWorkspaceAction: ActionFunction = async ({
   const workspace = await models.workspace.getById(workspaceId);
   guard(workspace, 'Workspace not found');
 
-  await models.stats.incrementDeletedRequestsForDescendents(workspace);
+  await models.stats.incrementDeletedRequestsForDescendants(workspace);
   await models.workspace.remove(workspace);
 
   try {
@@ -196,7 +196,7 @@ export const duplicateWorkspaceAction: ActionFunction = async ({ request, params
     await models.apiSpec.updateOrCreateForParentId(newWorkspace._id, {
       fileName: name,
     });
-    models.stats.incrementCreatedRequestsForDescendents(newWorkspace);
+    models.stats.incrementCreatedRequestsForDescendants(newWorkspace);
     return newWorkspace;
   }
   const newWorkspace = await duplicate(workspace, {
