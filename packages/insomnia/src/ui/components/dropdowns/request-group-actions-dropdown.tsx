@@ -86,7 +86,7 @@ export const RequestGroupActionsDropdown = ({
   };
 
   const handleDeleteFolder = async () => {
-    models.stats.incrementDeletedRequestsForDescendents(requestGroup);
+    models.stats.incrementDeletedRequestsForDescendants(requestGroup);
     requestFetcher.submit({ id: requestGroup._id },
       {
         action: `/organization/${organizationId}/project/${projectId}/workspace/${workspaceId}/debug/request-group/delete`,

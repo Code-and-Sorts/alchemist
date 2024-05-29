@@ -1,6 +1,6 @@
 export type SendRequestCallback<TResponse> = (requestId: string) => Promise<TResponse>;
 
-export interface InsomniaOptions<TResponse> {
+export interface AlchemistOptions<TResponse> {
   sendRequest: SendRequestCallback<TResponse>;
   bail?: boolean;
   keepFile?: boolean;
@@ -8,16 +8,16 @@ export interface InsomniaOptions<TResponse> {
 }
 
 /**
- * An instance of Insomnium will be exposed as a global variable during
+ * An instance of alchemist will be exposed as a global variable during
  * tests, and will provide a bunch of utility functions for sending
  * requests, etc.
  */
-export class Insomnium<TResponse = {}> {
+export class Alchemist<TResponse = {}> {
   activeRequestId: string | null;
   activeEnvironmentId: string | null = null;
   sendRequest: SendRequestCallback<TResponse>;
 
-  constructor(options: InsomniaOptions<TResponse>) {
+  constructor(options: AlchemistOptions<TResponse>) {
     this.sendRequest = options.sendRequest; // Things that are set per test
 
     this.activeRequestId = null;

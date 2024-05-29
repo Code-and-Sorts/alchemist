@@ -3,13 +3,13 @@ name: Update Homebrew
 on:
   schedule:
     # weekdays at 00:00
-    - cron: '0 0 * * 1-5'
+    - cron: "0 0 * * 1-5"
 
   workflow_dispatch:
 
 jobs:
   update_homebrew:
-    name: Update Insomnium Formula
+    name: Update alchemist Formula
     # must be macos, linux-brew doesn't have casks
     runs-on: macos-latest
     steps:
@@ -40,11 +40,10 @@ jobs:
       - name: Configure Git user
         uses: Homebrew/actions/git-user-config@master
         with:
-          username: 'ArchGPT'
+          username: "ArchGPT"
 
       - name: Update brew
         run: brew update
-
 
       - name: Bump insomnia package
         uses: Homebrew/actions/bump-packages@master
@@ -52,16 +51,13 @@ jobs:
           # Custom GitHub access token with only the 'public_repo' scope enabled
           token: ${{secrets.HOMEBREW_PR_GH_TOKEN}}
           # Bump only these formulae if outdated
-          casks:
-            inso-beta
-            inso
-            insomnia
-          
-          
+          casks: inso-beta inso insomnia
+
       - name: Homebrew bump cask
         uses: macauley/action-homebrew-bump-cask@v1.0.0
         with:
           token: ${{ secrets.HOMEBREW_PR_GH_TOKEN }}
+          # TODO: setup cask for alchemist
           cask: ArchGPT/homebrew-tap/insomnium
           # run brew livecheck to check if any provided casks are outdated.
           # Better as a schedule. If none are oudated, action exit

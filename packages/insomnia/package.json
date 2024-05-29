@@ -1,23 +1,23 @@
 {
-  "name": "insomnium",
-  "version": "0.2.3-a",
-  "productName": "Insomnium",
+  "name": "alchemist",
+  "version": "0.1.0",
+  "productName": "alchemist",
   "private": true,
   "description": "The Collaborative API Design Tool",
-  "homepage": "https://archgpt.dev/insomnium",
+  "homepage": "https://github.com/colby-timm/alchemist",
   "bugs": {
-    "url": "https://github.com/ArchGPT/insomnium/issues"
+    "url": "https://github.com/colby-timm/alchemist/issues"
   },
   "build": {
     "asar": true
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArchGPT/insomnium.git",
+    "url": "git+https://github.com/colby-timm/alchemist.git",
     "directory": "packages/insomnia"
   },
   "license": "MIT",
-  "author": "Archy <archy@archgpt.dev>",
+  "author": "Colby Timm",
   "main": "src/main.min.js",
   "scripts": {
     "build": "npm run build:sr && npm run build:app",

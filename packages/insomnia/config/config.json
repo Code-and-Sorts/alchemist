@@ -1,14 +1,14 @@
 {
-  "name": "insomnium",
-  "appId": "com.insomnium.app",
-  "userDataFolder": "Insomnium",
-  "productName": "Insomnium",
+  "name": "alchemist",
+  "appId": "com.alchemist.app",
+  "userDataFolder": "alchemist",
+  "productName": "alchemist",
   "synopsis": "The 100% local and privacy-focus API Client and Design Tool",
-  "icon": "https://github.com/archGPT/insomnium/blob/main/packages/insomnia/src/icons/icon.png?raw=true",
-  "changelogUrl": "https://github.com/ArchGPT/insomnium/releases",
+  "icon": "https://github.com/colby-timm/alchemist/blob/main/packages/insomnia/src/icons/icon.png?raw=true",
+  "changelogUrl": "https://github.com/colby-timm/alchemist/releases",
   "theme": "default",
   "lightTheme": "studio-light",
   "darkTheme": "default",
-  "githubOrg": "ArchGPT",
-  "githubRepo": "insomnium"
+  "githubOrg": "colby-timm",
+  "githubRepo": "alchemist"
 }

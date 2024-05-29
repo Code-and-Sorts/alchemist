@@ -9,7 +9,7 @@
       "sourceMaps": true,
       "presentation": {
         "hidden": true,
-        "group": "Insomnium",
+        "group": "alchemist",
         "order": 1
       },
       "cwd": "${workspaceFolder}/packages/insomnia",
@@ -30,7 +30,7 @@
       "request": "attach",
       "presentation": {
         "hidden": true,
-        "group": "Insomnium",
+        "group": "alchemist",
         "order": 2
       },
       "port": 9222,
@@ -87,14 +87,14 @@
   ],
   "compounds": [
     {
-      "name": "Insomnium",
+      "name": "alchemist",
       "presentation": {
         "hidden": false,
-        "group": "Insomnium",
+        "group": "alchemist",
         "order": 0
       },
       "stopAll": true,
-      "preLaunchTask": "Insomnium: Compile (Watch)",
+      "preLaunchTask": "alchemist: Compile (Watch)",
       "configurations": ["Electron: main", "Electron: renderer"]
     }
   ]

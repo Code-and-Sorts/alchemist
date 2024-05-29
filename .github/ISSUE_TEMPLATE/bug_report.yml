@@ -30,7 +30,7 @@ body:
   attributes:
     label: Is there an existing issue for this?
     options:
-      - label: I have searched the [issue tracker](https://www.github.com/ArchGPT/insomnium/issues) for this problem.
+      - label: I have searched the [issue tracker](https://www.github.com/colby-timm/alchemist/issues) for this problem.
         required: true
 - type: textarea
   attributes:
@@ -38,8 +38,8 @@ body:
     description: If your problem needs further explanation, please add more information here.
 - type: input
   attributes:
-    label: Insomnium Version
-    description: What version of Insmonia are you using?
+    label: alchemist Version
+    description: What version of alchemist are you using?
     placeholder: "2021.5.0"
   validations:
     required: true
@@ -68,12 +68,12 @@ body:
 - type: input
   attributes:
     label: Installation method
-    description: How did you install Insomnium?
+    description: How did you install alchemist?
     placeholder: "e.g. download from insomnia.rest, homebrew, apt, etc."
   validations:
     required: true
 - type: input
   attributes:
-    label: Last Known Working Insomnium version
-    description: What is the last version of Insomnium this worked in, if applicable?
+    label: Last Known Working alchemist version
+    description: What is the last version of alchemist this worked in, if applicable?
     placeholder: "2021.4.0"

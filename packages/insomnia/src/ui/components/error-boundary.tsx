@@ -1,6 +1,6 @@
-import React, { PureComponent, ReactNode } from 'react';
+import React, { PureComponent, ReactNode } from "react";
 
-import { showError } from './modals/index';
+import { showError } from "./modals/index";
 
 interface Props {
   children: ReactNode;
@@ -27,7 +27,8 @@ class SingleErrorBoundary extends PureComponent<Props, State> {
   // eslint-disable-next-line camelcase
   UNSAFE_componentWillReceiveProps(nextProps: Props) {
     const { error, info } = this.state;
-    const invalidationKeyChanged = nextProps.invalidationKey !== this.props.invalidationKey;
+    const invalidationKeyChanged =
+      nextProps.invalidationKey !== this.props.invalidationKey;
     const isErrored = error !== null || info !== null;
     const shouldResetError = invalidationKeyChanged && isErrored;
 
@@ -43,12 +44,13 @@ class SingleErrorBoundary extends PureComponent<Props, State> {
     error: Error,
     info: {
       componentStack: string;
-    },
+    }
   ) {
     const { children } = this.props;
-    const firstChild = Array.isArray(children) && children.length === 1 ? children[0] : children;
+    const firstChild =
+      Array.isArray(children) && children.length === 1 ? children[0] : children;
     this.setState({ error, info });
-    let componentName = 'component';
+    let componentName = "component";
 
     try {
       componentName = firstChild.type.name;
@@ -60,11 +62,14 @@ class SingleErrorBoundary extends PureComponent<Props, State> {
       try {
         showError({
           error,
-          title: 'Application Error',
+          title: "Application Error",
           // @ts-expect-error -- TSCONVERSION
           message: (
             <p>
-              Failed to render {componentName}. Please report the error to <a href="https://github.com/ArchGPT/insomnium/issues">our Github Issues</a>
+              Failed to render {componentName}. Please report the error to{" "}
+              <a href="https://github.com/colby-timm/alchemist/issues">
+                our Github Issues
+              </a>
             </p>
           ),
         });
@@ -82,7 +87,9 @@ class SingleErrorBoundary extends PureComponent<Props, State> {
       return renderError ? (
         renderError(error)
       ) : (
-        <div className={errorClassName ?? ''}>Render Failure: {error.message}</div>
+        <div className={errorClassName ?? ""}>
+          Render Failure: {error.message}
+        </div>
       );
     }
 

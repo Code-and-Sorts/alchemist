@@ -5,11 +5,11 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArchGPT/insomnium.git",
+    "url": "git+https://github.com/colby-timm/alchemist.git",
     "directory": "packages/insomnia-smoke-test"
   },
   "bugs": {
-    "url": "https://github.com/ArchGPT/insomnium/issues"
+    "url": "https://github.com/colby-timm/alchemist/issues"
   },
   "version": "0.2.3-a",
   "scripts": {
@@ -48,7 +48,7 @@
     "xvfb-maybe": "^0.2.1"
   },
   "description": "[![Playwright](https://img.shields.io/badge/playwright-blue.svg?style=for-the-badge&logo=playwright)](https://github.com/microsoft/playwright)",
-  "homepage": "https://github.com/ArchGPT/insomnium#readme",
+  "homepage": "https://github.com/colby-timm/alchemist#readme",
   "main": ".eslintrc.js",
   "directories": {
     "doc": "docs",
