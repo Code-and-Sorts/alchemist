@@ -1,7 +1,5 @@
 # alchemist API Client
 
-_\<currently not being actively maintained>_
-
 alchemist is a 100% local and privacy-focused open-source API client for testing GraphQL, REST, WebSockets, Server-sent
 events and gRPC in development/production.
 
@@ -26,10 +24,10 @@ I have removed user login, tracking, analytics, etc, from Insomnia so it is now 
 ## Download
 
 alchemist is available for Mac, Windows, Ubuntu, Debian, CentOS, Fedora and
-[can be downloaded here](https://github.com/colby-timm/alchemist/releases). alchemist is also
+[can be downloaded here](https://github.com/colby-timm/alchemist/releases).
 
 <!-- TODO: Update -->
-<!-- [available on AUR for ArchLinux](https://aur.archlinux.org/packages/insomnium-bin). -->
+<!-- [alchemist is also available on AUR for ArchLinux](https://aur.archlinux.org/packages/insomnium-bin). -->
 
 Alternatively, you can build alchemist from source on your local machine using `npm run app-package`.
 

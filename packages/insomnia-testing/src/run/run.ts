@@ -6,13 +6,13 @@ import { tmpdir } from 'os';
 import { join } from 'path';
 
 import { TestResults } from './entities';
-import { Insomnium, InsomniaOptions } from './insomnia';
+import { Alchemist, AlchemistOptions } from './alchemist';
 import { JavaScriptReporter } from './javascript-reporter';
 
-// declare var insomnia: Insomnium;
+// declare var insomnia: alchemist;
 const runInternal = async <TReturn, TNetworkResponse>(
   testSrc: string | string[],
-  options: InsomniaOptions<TNetworkResponse>,
+  options: AlchemistOptions<TNetworkResponse>,
   reporter: Reporter | ReporterConstructor = 'spec',
   extractResult: (runner: Mocha.Runner) => TReturn,
 ) => new Promise<TReturn>((resolve, reject) => {
@@ -21,7 +21,7 @@ const runInternal = async <TReturn, TNetworkResponse>(
   // Add global `insomnia` helper.
   // This is the only way to add new globals to the Mocha environment as far as I can tell
   // @ts-expect-error -- global hack
-  global.insomnia = new Insomnium(options);
+  global.insomnia = new Alchemist(options);
   // @ts-expect-error -- global hack
   global.chai = chai;
 
@@ -80,7 +80,7 @@ const writeTempFile = (sourceCode: string) => {
   return path;
 };
 
-type CliOptions<TNetworkResponse> = InsomniaOptions<TNetworkResponse> & {
+type CliOptions<TNetworkResponse> = AlchemistOptions<TNetworkResponse> & {
   reporter?: Reporter;
 };
 
@@ -102,7 +102,7 @@ export const runTestsCli = async <TNetworkResponse>(
  */
 export const runTests = async <TNetworkResponse>(
   testSrc: string | string[],
-  options: InsomniaOptions<TNetworkResponse>,
+  options: AlchemistOptions<TNetworkResponse>,
 ) => runInternal(
   testSrc,
   options,
