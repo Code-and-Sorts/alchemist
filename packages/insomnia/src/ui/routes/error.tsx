@@ -1,23 +1,23 @@
-import React from 'react';
-import { FC } from 'react';
+import React from "react";
+import { FC } from "react";
 import {
   isRouteErrorResponse,
   useNavigate,
   useNavigation,
   useRouteError,
-} from 'react-router-dom';
-import styled from 'styled-components';
+} from "react-router-dom";
+import styled from "styled-components";
 
-import { DEFAULT_ORGANIZATION_ID } from '../../models/organization';
-import { Button } from '../components/themed-button';
+import { DEFAULT_ORGANIZATION_ID } from "../../models/organization";
+import { Button } from "../components/themed-button";
 
 const Container = styled.div({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100%',
-  width: '100%',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  height: "100%",
+  width: "100%",
 });
 
 const Spinner = () => <i className="fa fa-spin fa-refresh" />;
@@ -32,7 +32,7 @@ export const ErrorRoute: FC = () => {
       return err.message;
     }
 
-    return err?.message || 'Unknown error';
+    return err?.message || "Unknown error";
   };
   const getErrorStack = (err: any) => {
     if (isRouteErrorResponse(err)) {
@@ -47,18 +47,33 @@ export const ErrorRoute: FC = () => {
 
   return (
     <Container>
-      <h1 style={{ color: 'var(--color-font)' }}>Application Error</h1>
-      <p style={{ color: 'var(--color-font)' }}>
-        Failed to render. Please report to <a href="https://github.com/ArchGPT/insomnium/issues">our Github Issues</a>
+      <h1 style={{ color: "var(--color-font)" }}>Application Error</h1>
+      <p style={{ color: "var(--color-font)" }}>
+        Failed to render. Please report to{" "}
+        <a href="https://github.com/colby-timm/alchemist/issues">
+          our Github Issues
+        </a>
       </p>
-      <span style={{ color: 'var(--color-font)' }}>
-        <code className="selectable" style={{ wordBreak: 'break-word', margin: 'var(--padding-sm)' }}>{errorMessage}</code>
+      <span style={{ color: "var(--color-font)" }}>
+        <code
+          className="selectable"
+          style={{ wordBreak: "break-word", margin: "var(--padding-sm)" }}
+        >
+          {errorMessage}
+        </code>
       </span>
-      <Button onClick={() => navigate(`/organization/${DEFAULT_ORGANIZATION_ID}`)}>
-        Try to reload the app{' '}
-        <span>{navigation.state === 'loading' ? <Spinner /> : null}</span>
+      <Button
+        onClick={() => navigate(`/organization/${DEFAULT_ORGANIZATION_ID}`)}
+      >
+        Try to reload the app{" "}
+        <span>{navigation.state === "loading" ? <Spinner /> : null}</span>
       </Button>
-      <code className="selectable" style={{ wordBreak: 'break-word', margin: 'var(--padding-sm)' }}>{getErrorStack(error)}</code>
+      <code
+        className="selectable"
+        style={{ wordBreak: "break-word", margin: "var(--padding-sm)" }}
+      >
+        {getErrorStack(error)}
+      </code>
     </Container>
   );
 };

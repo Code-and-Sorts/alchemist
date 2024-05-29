@@ -1,31 +1,35 @@
-import React, { FC, memo } from 'react';
-import { useRouteLoaderData } from 'react-router-dom';
+import React, { FC, memo } from "react";
+import { useRouteLoaderData } from "react-router-dom";
 
-import { docsBase } from '../../../common/documentation';
-import { RootLoaderData } from '../../routes/root';
-import { Link } from '../base/link';
-import { showModal } from '../modals/index';
-import { SettingsModal } from '../modals/settings-modal';
+import { docsBase } from "../../../common/documentation";
+import { RootLoaderData } from "../../routes/root";
+import { Link } from "../base/link";
+import { showModal } from "../modals/index";
+import { SettingsModal } from "../modals/settings-modal";
 interface Props {
   error: string;
   url: string;
 }
 export const ResponseErrorViewer: FC<Props> = memo(({ error }) => {
   let msg: React.ReactNode = null;
-  const {
-    settings,
-  } = useRouteLoaderData('root') as RootLoaderData;
+  const { settings } = useRouteLoaderData("root") as RootLoaderData;
   const { editorFontSize } = settings;
 
-  if (error?.toLowerCase().indexOf('certificate') !== -1) {
+  if (error?.toLowerCase().indexOf("certificate") !== -1) {
     msg = (
-      <button className="btn btn--clicky" onClick={() => showModal(SettingsModal)}>
+      <button
+        className="btn btn--clicky"
+        onClick={() => showModal(SettingsModal)}
+      >
         Disable SSL Validation
       </button>
     );
-  } else if (error?.toLowerCase().indexOf('getaddrinfo') !== -1) {
+  } else if (error?.toLowerCase().indexOf("getaddrinfo") !== -1) {
     msg = (
-      <button className="btn btn--clicky" onClick={() => showModal(SettingsModal)}>
+      <button
+        className="btn btn--clicky"
+        onClick={() => showModal(SettingsModal)}
+      >
         Setup Network Proxy
       </button>
     );
@@ -49,13 +53,15 @@ export const ResponseErrorViewer: FC<Props> = memo(({ error }) => {
       </pre>
       <hr />
       <div className="text-center pad">
-        <p className="faint pad-left pad-right">Here are some additional things that may help.</p>
+        <p className="faint pad-left pad-right">
+          Here are some additional things that may help.
+        </p>
         {msg}
         &nbsp;&nbsp;
         <Link
           button
           className="btn btn--clicky margin-top-sm"
-          href="https://github.com/ArchGPT/insomnium#bugs-and-feature-requests"
+          href="https://github.com/colby-timm/alchemist#bugs-and-feature-requests"
         >
           Submit an Issue
         </Link>
@@ -64,4 +70,4 @@ export const ResponseErrorViewer: FC<Props> = memo(({ error }) => {
   );
 });
 
-ResponseErrorViewer.displayName = 'ResponseError';
+ResponseErrorViewer.displayName = "ResponseError";

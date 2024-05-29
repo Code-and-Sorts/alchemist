@@ -1,15 +1,15 @@
 {
-  "name": "insomnium",
+  "name": "alchemist",
   "private": true,
   "version": "1.0.0",
-  "author": "Archy <archy@archgpt.dev>",
-  "description": "Insomnium is a cross-platform REST client, built on top of Electron.",
+  "author": "Colby Timm",
+  "description": "alchemist is a cross-platform REST client, built on top of Electron.",
   "license": "MIT",
-  "repository": "https://github.com/ArchGPT/insomnium",
+  "repository": "https://github.com/colby-timm/alchemist",
   "bugs": {
-    "url": "https://github.com/ArchGPT/insomniumissues"
+    "url": "https://github.com/colby-timm/alchemist/issues"
   },
-  "homepage": "https://github.com/ArchGPT/insomnium#readme",
+  "homepage": "https://github.com/colby-timm/alchemist#readme",
   "engines": {
     "node": ">=18.18.2",
     "npm": ">=8.19.0"
