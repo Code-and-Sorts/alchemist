@@ -7,7 +7,7 @@ events and gRPC in development/production.
 - ✅ no cloud services, no tracking/communication to external servers behind the scene <br>
 
 [![license](https://img.shields.io/github/license/colby-timm/alchemist.svg)](LICENSE)
-[![GitHub Discussions](https://img.shields.io/github/discussions/colby-timm/alchemist)](https://github.com/colby-timm/alchemist/discussions)
+[![GitHub Discussions](https://img.shields.io/github/discussions/colby-timm/alchemist)](https://github.com/Code-and-Sorts/alchemist/discussions)
 [![join our discord](https://dcbadge.vercel.app/api/server/pCcWcncwkw?style=flat&compact=true)](https://discord.gg/pCcWcncwkw)
 
 ![alchemist API Client](https://raw.githubusercontent.com/colby-timm/alchemist/main/screenshots/v0.1.png)
@@ -24,7 +24,7 @@ I have removed user login, tracking, analytics, etc, from Insomnia so it is now 
 ## Download
 
 alchemist is available for Mac, Windows, Ubuntu, Debian, CentOS, Fedora and
-[can be downloaded here](https://github.com/colby-timm/alchemist/releases).
+[can be downloaded here](https://github.com/Code-and-Sorts/alchemist/releases).
 
 <!-- TODO: Update -->
 <!-- [alchemist is also available on AUR for ArchLinux](https://aur.archlinux.org/packages/insomnium-bin). -->

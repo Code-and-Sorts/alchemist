@@ -50,7 +50,7 @@ export const ErrorRoute: FC = () => {
       <h1 style={{ color: "var(--color-font)" }}>Application Error</h1>
       <p style={{ color: "var(--color-font)" }}>
         Failed to render. Please report to{" "}
-        <a href="https://github.com/colby-timm/alchemist/issues">
+        <a href="https://github.com/Code-and-Sorts/alchemist/issues">
           our Github Issues
         </a>
       </p>

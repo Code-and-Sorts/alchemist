@@ -4,16 +4,16 @@
   "productName": "alchemist",
   "private": true,
   "description": "The Collaborative API Design Tool",
-  "homepage": "https://github.com/colby-timm/alchemist",
+  "homepage": "https://github.com/Code-and-Sorts/alchemist",
   "bugs": {
-    "url": "https://github.com/colby-timm/alchemist/issues"
+    "url": "https://github.com/Code-and-Sorts/alchemist/issues"
   },
   "build": {
     "asar": true
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colby-timm/alchemist.git",
+    "url": "git+https://github.com/Code-and-Sorts/alchemist.git",
     "directory": "packages/insomnia"
   },
   "license": "MIT",
