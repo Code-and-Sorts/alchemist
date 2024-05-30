@@ -2,7 +2,7 @@
   "name": "alchemist",
   "private": true,
   "version": "0.0.1",
-  "author": "Colby Timm",
+  "author": "Colby [Code and Sorts]",
   "description": "alchemist is a cross-platform REST client, built on top of Electron.",
   "license": "MIT",
   "repository": "https://github.com/Code-and-Sorts/alchemist",

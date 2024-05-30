@@ -17,7 +17,7 @@
     "directory": "packages/insomnia"
   },
   "license": "MIT",
-  "author": "Colby Timm",
+  "author": "Colby [Code and Sorts]",
   "main": "src/main.min.js",
   "scripts": {
     "build": "npm run build:sr && npm run build:app",
