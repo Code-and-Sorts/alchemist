@@ -8,7 +8,6 @@ events and gRPC in development/production.
 
 [![license](https://img.shields.io/github/license/code-and-sorts/alchemist.svg)](LICENSE)
 [![GitHub Discussions](https://img.shields.io/github/discussions/code-and-sorts/alchemist)](https://github.com/Code-and-Sorts/alchemist/discussions)
-[![join our discord](https://dcbadge.vercel.app/api/server/pCcWcncwkw?style=flat&compact=true)](https://discord.gg/pCcWcncwkw)
 
 ![alchemist API Client](https://raw.githubusercontent.com/code-and-sorts/alchemist/main/screenshots/v0.0.1.png)
 
