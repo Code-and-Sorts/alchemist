@@ -6,11 +6,10 @@ events and gRPC in development/production.
 - ✅ works 100% offline, the way a local testing tool should behave <br>
 - ✅ no cloud services, no tracking/communication to external servers behind the scene <br>
 
-[![license](https://img.shields.io/github/license/colby-timm/alchemist.svg)](LICENSE)
-[![GitHub Discussions](https://img.shields.io/github/discussions/colby-timm/alchemist)](https://github.com/colby-timm/alchemist/discussions)
-[![join our discord](https://dcbadge.vercel.app/api/server/pCcWcncwkw?style=flat&compact=true)](https://discord.gg/pCcWcncwkw)
+[![license](https://img.shields.io/github/license/code-and-sorts/alchemist.svg)](LICENSE)
+[![GitHub Discussions](https://img.shields.io/github/discussions/code-and-sorts/alchemist)](https://github.com/Code-and-Sorts/alchemist/discussions)
 
-![alchemist API Client](https://raw.githubusercontent.com/colby-timm/alchemist/main/screenshots/v0.1.png)
+![alchemist API Client](https://raw.githubusercontent.com/code-and-sorts/alchemist/main/screenshots/v0.0.1.png)
 
 ## Current Status
 
@@ -24,7 +23,7 @@ I have removed user login, tracking, analytics, etc, from Insomnia so it is now 
 ## Download
 
 alchemist is available for Mac, Windows, Ubuntu, Debian, CentOS, Fedora and
-[can be downloaded here](https://github.com/colby-timm/alchemist/releases).
+[can be downloaded here](https://github.com/Code-and-Sorts/alchemist/releases).
 
 <!-- TODO: Update -->
 <!-- [alchemist is also available on AUR for ArchLinux](https://aur.archlinux.org/packages/insomnium-bin). -->
@@ -33,9 +32,9 @@ Alternatively, you can build alchemist from source on your local machine using `
 
 ## Backstory
 
-alchemist is a fork of Insomnium, which is a fork of [Kong/insomnia at 2023.5.8](https://github.com/ArchGPT/insomnia),
-the last commit before compulsory account login was introduced. In a sense, alchemist and Insomnium are a community
-response to
+alchemist is a fork of [Insomnium](https://github.com/ArchGPT/insomnium), which is a fork of
+[Kong/insomnia at 2023.5.8](https://github.com/ArchGPT/insomnia), the last commit before compulsory account login was
+introduced. In a sense, alchemist and Insomnium are a community response to
 [the latest product update that forces account creation w/o warning](https://news.ycombinator.com/item?id=37680522).
 
 ## Migration from Insomnia

@@ -97,7 +97,7 @@ const config = {
   squirrelWindows: {
     artifactName: `${BINARY_PREFIX}-\${version}.\${ext}`,
     iconUrl:
-      "https://github.com/colby-timm/alchemist/blob/main/packages/insomnia/src/icons/icon.png?raw=true",
+      "https://github.com/Code-and-Sorts/alchemist/blob/main/packages/insomnia/src/icons/icon.png?raw=true",
   },
   portable: {
     artifactName: `${BINARY_PREFIX}-\${version}-portable.\${ext}`,

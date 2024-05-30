@@ -5,7 +5,7 @@ involved.
 
 ## Using the issue tracker
 
-[GitHub Issues](https://github.com/colby-timm/alchemist/issues) is the preferred channel for
+[GitHub Issues](https://github.com/Code-and-Sorts/alchemist/issues) is the preferred channel for
 [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests).
 
 Please respect the following guidelines:

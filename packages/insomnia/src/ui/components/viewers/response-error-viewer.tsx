@@ -61,7 +61,7 @@ export const ResponseErrorViewer: FC<Props> = memo(({ error }) => {
         <Link
           button
           className="btn btn--clicky margin-top-sm"
-          href="https://github.com/colby-timm/alchemist#bugs-and-feature-requests"
+          href="https://github.com/Code-and-Sorts/alchemist#bugs-and-feature-requests"
         >
           Submit an Issue
         </Link>

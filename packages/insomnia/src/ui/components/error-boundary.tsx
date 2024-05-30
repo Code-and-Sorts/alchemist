@@ -67,7 +67,7 @@ class SingleErrorBoundary extends PureComponent<Props, State> {
           message: (
             <p>
               Failed to render {componentName}. Please report the error to{" "}
-              <a href="https://github.com/colby-timm/alchemist/issues">
+              <a href="https://github.com/Code-and-Sorts/alchemist/issues">
                 our Github Issues
               </a>
             </p>

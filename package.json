@@ -2,14 +2,14 @@
   "name": "alchemist",
   "private": true,
   "version": "0.0.1",
-  "author": "Colby Timm",
+  "author": "Colby [Code and Sorts]",
   "description": "alchemist is a cross-platform REST client, built on top of Electron.",
   "license": "MIT",
-  "repository": "https://github.com/colby-timm/alchemist",
+  "repository": "https://github.com/Code-and-Sorts/alchemist",
   "bugs": {
-    "url": "https://github.com/colby-timm/alchemist/issues"
+    "url": "https://github.com/Code-and-Sorts/alchemist/issues"
   },
-  "homepage": "https://github.com/colby-timm/alchemist#readme",
+  "homepage": "https://github.com/Code-and-Sorts/alchemist#readme",
   "engines": {
     "node": ">=18.18.2",
     "npm": ">=8.19.0"
